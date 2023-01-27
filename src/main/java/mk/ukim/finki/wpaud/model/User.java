@@ -23,8 +23,14 @@ public class User implements UserDetails
 
     private String surname;
 
+    // to-one -> def type EAGER
+    // to-many -> def type LAZY
+
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private List<ShoppingCart> carts;
+
+    @ManyToOne
+    private Discount discount;
 
     @Enumerated(value = EnumType.STRING)
     private Role role;
