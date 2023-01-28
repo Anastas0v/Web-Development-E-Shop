@@ -5,9 +5,9 @@ import mk.ukim.finki.wpaud.model.Manufacturer;
 import mk.ukim.finki.wpaud.model.Product;
 import mk.ukim.finki.wpaud.model.exceptions.CategoryNotFoundException;
 import mk.ukim.finki.wpaud.model.exceptions.ManufacturerNotFoundException;
-import mk.ukim.finki.wpaud.repository.jpa.CategoryRepository;
-import mk.ukim.finki.wpaud.repository.jpa.ManufacturerRepository;
-import mk.ukim.finki.wpaud.repository.jpa.ProductRepository;
+import mk.ukim.finki.wpaud.repository.CategoryRepository;
+import mk.ukim.finki.wpaud.repository.ManufacturerRepository;
+import mk.ukim.finki.wpaud.repository.ProductRepository;
 import mk.ukim.finki.wpaud.service.ProductService;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +21,7 @@ public class ProductServiceImpl implements ProductService
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;
     private final ManufacturerRepository manufacturerRepository;
+    //private final ProductsPerManufacturerViewRepository manufacturerViewRepository;
 
     public ProductServiceImpl(ProductRepository productRepository, CategoryRepository categoryRepository, ManufacturerRepository manufacturerRepository)
     {
@@ -66,4 +67,10 @@ public class ProductServiceImpl implements ProductService
     {
         productRepository.deleteById(id);
     }
+
+//    @Override
+//    public void refreshMaterializedView()
+//    {
+//        this.manufacturerViewRepository.refreshMaterializedView();
+//    }
 }

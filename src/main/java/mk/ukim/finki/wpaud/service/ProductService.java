@@ -16,4 +16,6 @@ public interface ProductService
     Optional<Product> save(String name, Double price, Integer quantity, Long categoryId, Long manufacturerId);
 
     void deleteById(Long id);
+
+    //void refreshMaterializedView();
 }

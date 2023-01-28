@@ -8,8 +8,8 @@ import mk.ukim.finki.wpaud.model.exceptions.ProductAlreadyInShoppingCartExceptio
 import mk.ukim.finki.wpaud.model.exceptions.ProductNotFoundException;
 import mk.ukim.finki.wpaud.model.exceptions.ShoppingCartNotFoundException;
 import mk.ukim.finki.wpaud.model.exceptions.UserNotFoundException;
-import mk.ukim.finki.wpaud.repository.jpa.ShoppingCartRepository;
-import mk.ukim.finki.wpaud.repository.jpa.UserRepository;
+import mk.ukim.finki.wpaud.repository.ShoppingCartRepository;
+import mk.ukim.finki.wpaud.repository.UserRepository;
 import mk.ukim.finki.wpaud.service.ProductService;
 import mk.ukim.finki.wpaud.service.ShoppingCartService;
 import org.springframework.stereotype.Service;

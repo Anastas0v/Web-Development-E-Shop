@@ -1,4 +1,4 @@
-package mk.ukim.finki.wpaud.repository.jpa;
+package mk.ukim.finki.wpaud.repository;
 
 import mk.ukim.finki.wpaud.model.Manufacturer;
 import org.springframework.data.jpa.repository.JpaRepository;

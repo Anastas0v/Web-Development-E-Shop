@@ -2,7 +2,7 @@ package mk.ukim.finki.wpaud.service.impl;
 
 import mk.ukim.finki.wpaud.model.exceptions.InvalidArgumentsException;
 import mk.ukim.finki.wpaud.model.User;
-import mk.ukim.finki.wpaud.repository.jpa.UserRepository;
+import mk.ukim.finki.wpaud.repository.UserRepository;
 import mk.ukim.finki.wpaud.service.AuthService;
 import org.springframework.stereotype.Service;
 
