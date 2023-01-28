@@ -26,11 +26,8 @@ public class User implements UserDetails
     // to-one -> def type EAGER
     // to-many -> def type LAZY
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<ShoppingCart> carts;
-
-    @ManyToOne
-    private Discount discount;
 
     @Enumerated(value = EnumType.STRING)
     private Role role;

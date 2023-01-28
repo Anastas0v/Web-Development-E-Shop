@@ -5,7 +5,7 @@ import mk.ukim.finki.wpaud.model.User;
 import mk.ukim.finki.wpaud.model.exceptions.InvalidArgumentsException;
 import mk.ukim.finki.wpaud.model.exceptions.PasswordsDoNotMatchException;
 import mk.ukim.finki.wpaud.model.exceptions.UsernameAlreadyExistsException;
-import mk.ukim.finki.wpaud.repository.jpa.UserRepository;
+import mk.ukim.finki.wpaud.repository.UserRepository;
 import mk.ukim.finki.wpaud.service.UserService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

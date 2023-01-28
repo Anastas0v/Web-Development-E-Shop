@@ -1,7 +1,7 @@
 package mk.ukim.finki.wpaud.service.impl;
 
 import mk.ukim.finki.wpaud.model.Manufacturer;
-import mk.ukim.finki.wpaud.repository.jpa.ManufacturerRepository;
+import mk.ukim.finki.wpaud.repository.ManufacturerRepository;
 import mk.ukim.finki.wpaud.service.ManufacturerService;
 import org.springframework.stereotype.Service;
 
