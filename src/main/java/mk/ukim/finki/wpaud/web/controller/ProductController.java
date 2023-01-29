@@ -78,10 +78,10 @@ public class ProductController
         return "redirect:/products?error=ProductNotFound";
     }
 
-    @PostMapping("/add")
-    public String saveProduct(@RequestParam String name, @RequestParam Double price, @RequestParam Integer quantity, @RequestParam Long category, @RequestParam Long manufacturer)
-    {
-        productService.save(name, price, quantity, category, manufacturer);
-        return "redirect:/products";
-    }
+//    @PostMapping("/add")
+//    public String saveProduct(@RequestParam String name, @RequestParam Double price, @RequestParam Integer quantity, @RequestParam Long category, @RequestParam Long manufacturer)
+//    {
+//        productService.save(name, price, quantity, category, manufacturer);
+//        return "redirect:/products";
+//    }
 }

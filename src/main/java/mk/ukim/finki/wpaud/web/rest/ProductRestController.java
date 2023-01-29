@@ -1,6 +1,7 @@
 package mk.ukim.finki.wpaud.web.rest;
 
 import mk.ukim.finki.wpaud.model.Product;
+import mk.ukim.finki.wpaud.model.dto.ProductDTO;
 import mk.ukim.finki.wpaud.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -33,21 +34,21 @@ public class ProductRestController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-//    @PostMapping("/add")
-//    public ResponseEntity<Product> save(@RequestBody ProductDto productDto)
-//    {
-//        return this.productService.save(productDto)
-//                .map(product -> ResponseEntity.ok().body(product))
-//                .orElseGet(() -> ResponseEntity.badRequest().build());
-//    }
-//
-//    @PutMapping("/edit/{id}")
-//    public ResponseEntity<Product> save(@PathVariable Long id, @RequestBody ProductDto productDto)
-//    {
-//        return this.productService.edit(id, productDto)
-//                .map(product -> ResponseEntity.ok().body(product))
-//                .orElseGet(() -> ResponseEntity.badRequest().build());
-//    }
+    @PostMapping("/add")
+    public ResponseEntity<Product> save(@RequestBody ProductDTO productDto)
+    {
+        return this.productService.save(productDto)
+                .map(product -> ResponseEntity.ok().body(product))
+                .orElseGet(() -> ResponseEntity.badRequest().build());
+    }
+
+    @PutMapping("/edit/{id}")
+    public ResponseEntity<Product> save(@PathVariable Long id, @RequestBody ProductDTO productDto)
+    {
+        return this.productService.edit(id, productDto)
+                .map(product -> ResponseEntity.ok().body(product))
+                .orElseGet(() -> ResponseEntity.badRequest().build());
+    }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteById(@PathVariable Long id)
